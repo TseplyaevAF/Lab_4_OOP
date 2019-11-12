@@ -151,13 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
     <ClCompile Include="class_shape.cpp" />
-    <ClCompile Include="Quadrangle.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Square.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Quadrangle.h" />
+    <ClInclude Include="Circle.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Square.h" />
   </ItemGroup>
