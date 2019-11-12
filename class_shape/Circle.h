@@ -10,14 +10,13 @@ class Circle :
 	float r; // радиус
 
 public:
-
 	Circle();
 	~Circle();
 	void set_r(float r1); // задание радиуса
 	float get_r(); // получение радиуса
 	float Area() override;
 	float Perimeter() override;
-	float Diameter();
+	float Diameter();// Диаметр
 
 };
 

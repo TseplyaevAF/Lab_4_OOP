@@ -25,4 +25,6 @@ float Circle::Perimeter() {
 }
 
 
-//float Diameter();
+float Circle::Diameter() {
+	return r * r;
+}
