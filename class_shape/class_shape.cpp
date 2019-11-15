@@ -10,21 +10,21 @@ int main()
 {
 	setlocale(0, "RUS");
 
-	Square a;
+	Square a(5);
 	a.set_side(4); // сторона квадрата = 4
-	float S = a.Area(); // Площадь квадрата
-	S = a.Perimeter(); // Периметр квадрата
+	float S = a.area(); // Площадь квадрата
+	S = a.perimeter(); // Периметр квадрата
 
 	Circle b;
 	b.set_r(3.2); // r = 3.2
-	S = b.Area(); // Площадь окружности
-	float L = b.Perimeter(); // Длина окружности
-	float D = b.Diameter();
+	S = b.area(); // Площадь окружности
+	float L = b.perimeter(); // Длина окружности
+	float D = b.diameter(); // Диаметр окружности
 
-	Triangle c;
 	try {
+		Triangle c(2, 3, 5);
 		c.set_sides(3, 4, 5);
-		S = c.Area();
+		S = c.area();
 		cout << "S = " << S << endl;
 	}
 	catch (short e){

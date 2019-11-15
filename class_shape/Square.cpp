@@ -6,20 +6,25 @@ Square::Square() {
 Square::~Square() {
 }
 
+Square::Square(float side1) {
+	if (side1 > 0)
+		side = side1;
+}
+
 void Square::set_side(float side1) {
 	if (side1 > 0)
-	this->side = side1;
+	side = side1;
 }
 
-float Square::get_side() {
-	return this->side;
+float Square::get_side() const {
+	return side;
 }
 
-float Square::Area() {
+float Square::area() {
 	return side * side;
 }
 
-float Square::Perimeter()
+float Square::perimeter()
 {
 	return 4 * side;
 }

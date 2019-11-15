@@ -7,24 +7,30 @@ Circle::Circle() {
 Circle::~Circle() {
 
 }
+
+Circle::Circle(float r1) { // к. с параметром
+	if (r1 > 0) r = r1;
+}
+
 void Circle::set_r(float r1) { // задание радиуса
-	if (r1 > 0) this->r = r1;
+	if (r1 > 0) 
+		r = r1;
 }
 
-float Circle::get_r() { // получение радиуса
-	return this->r;
+float Circle::get_r() const { // получение радиуса
+	return r;
 }
 
-float Circle::Area() {
+float Circle::area() {
 
 	return PI * r * r;
 }
 
-float Circle::Perimeter() {
+float Circle::perimeter() {
 	return 2 * PI * r;
 }
 
 
-float Circle::Diameter() {
+float Circle::diameter() const {
 	return r * r;
 }

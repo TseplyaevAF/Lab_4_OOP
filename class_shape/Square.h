@@ -10,10 +10,11 @@ private:
 
 public:
 	Square();
+	Square(float side1);
 	~Square();
 	void set_side(float side1); // Задание стороны
-	float get_side(); // Получение стороны
-	float Area() override;
-	float Perimeter() override;
+	float get_side() const; // Получение стороны
+	float area() override;
+	float perimeter() override;
 };
 
